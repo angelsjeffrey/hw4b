@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)file:///C:/Users/Jeffrey%20Silver/Downloads/jsdemo2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Untitled Document</title>
+	<script language="javascript" type="text/javascript">
+		var name1, name2, name3;
+		var age1=22, age2=33, age3=44;
+		name1='jim';
+		name2='bob';
+		name3='mike';
+		
+		names= new Array("jim", "bob", "mike");
+		ages = new Array(22,33,44);
+		//document.write(name1 + " is " + age1 + " years old");
+		//document.write(names[0] + " is " + ages[0] + " years old");
+		s = "";
+		for (i = 0; i< 3; i++)
+		{
+			//document.write(names[i] + " is " + ages[i] + " years old<br>");
+			s  += names[i] + " is " + ages[i] + " years old\n";
+		}
+		//alert(s);
+		
+		for (i = 1; i<5; i++)
+			{
+		n = Math.random() * 9;
+		n= Math.round(n);
+		document.write ("random number is: " + n + "<br>");
+		}
+		
+</script></head><body>random number is: 6<br>random number is: 5<br>random number is: 7<br>random number is: 1<br>
+
+	<form>
+		<input type="text" id="txt1" value="hello">
+		<input type="button" onclick="showVal()" value="Show the value">
+	</form>
+	
+	<script language="javascript" type="text/javascript">
+		function showVal()
+		{
+			val = document.getElementById("txt1").value;
+		alert(val);
+		}
+		
+		
+		
+</script>
+	
+
+
+</body></html>
